@@ -1,0 +1,33 @@
+body{
+    background-color: #EFE2BD;
+}
+
+nav{
+    background-color: #BDAE86;
+    position: fixed;
+    /* width: auto; */
+    display: flex;
+    width: fit-content;
+    /* flex: 1; */
+    align-items: flex-start;
+    top: 0;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: #424B54;
+    font-weight: 500;
+    font-size: 3.0vh;
+    padding: 20%;
+    /* border-radius: 3px; */
+    text-transform: uppercase;
+  }
+
+  #home {
+    align-items: flex-end;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 137px;
+  }
