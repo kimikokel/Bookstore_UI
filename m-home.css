@@ -1,5 +1,11 @@
+.main {
+    margin-left: 16%;
+    overflow-wrap: break-word;
+}
+
 .navbar {
     background-color: #BDAE86;
+    border-right: white 5px solid;
     height: 100%;
     width: 15%;
     position: fixed;
@@ -32,32 +38,77 @@
 }
 
 .header {
-    background-color: #D8C5B1;
-    border-top: 5px white solid;
-    border-bottom: 5px white solid;
     padding-top: 2%;
     padding-bottom: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header #search {
-width: 35%;
-/* height: 20%; */
-margin-left: 5%;
-border-radius: 500px;
-padding-left: 3%;
-padding-top: 1.5%;
-padding-bottom: 1.5%;
-border: none;
+    width: 70%;
+    margin-top: 5%;
+    border-radius: 500px;
+    padding-left: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border: none;
+}
+
+.header input::placeholder {
+    font-size: 1vw;
 }
 
 .header #icon {
-width: 10%;
-border-style: solid;
-border-color: white;
-border-radius: 100000px;
-border-width: 5px;
+    width: 30%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100000px;
+    border-width: thick;
 }
 
+.header h1 {
+    font-size: 4vw;
+    margin-left: 2%;
+}
+
+.header #search-icon {
+    margin-top: 5%;
+    width:8%;
+}
+
+#m-icon {
+    position: fixed;
+    margin-top: 2%;
+    width: 10%;
+    z-index: 100;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100000px;
+    border-width: 2px;
+}
+
+@media only screen and (min-width: 600px){
+    #m-icon {
+        margin-left: 1%;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    #m-icon {
+        margin-left: 1%;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    #m-icon {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    #m-icon {
+        margin-left: -2px;
+    }
+}

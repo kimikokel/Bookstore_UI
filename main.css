@@ -7,7 +7,6 @@ body{
 }
 
 .main {
-    padding-top: 4%;
 }
 
 p {
@@ -17,4 +16,16 @@ p {
 h1 {
     font-size: 1.5vw;
     text-align: center;
+}
+
+h2 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+hr {
+    border-width:0;
+    background-color: #424B54;
+    width: 90%;
+    height: 5px;
 }

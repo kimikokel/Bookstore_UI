@@ -1,6 +1,7 @@
 .navbar{
     position: fixed;
     background-color: #BDAE86;
+    border-bottom: 5px white solid;
     top: 0;
     left: 0;
     right: 0;
@@ -26,7 +27,6 @@
 
 .header {
   background-color: #D8C5B1;
-  border-top: 5px white solid;
   border-bottom: 5px white solid;
   margin-top: 6%;
   padding-top: 2%;
@@ -47,6 +47,14 @@
   border: none;
 }
 
+.header h1 {
+  padding-left: 5%;
+}
+
+.header #search-icon {
+  width:5%;
+}
+
 .header #icon {
   width: 10%;
   border-style: solid;
@@ -55,3 +63,6 @@
   border-width: 5px;
 }
 
+#m-icon {
+  display: none;
+}

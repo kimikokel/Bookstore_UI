@@ -7,10 +7,13 @@
         <link href="main.css" rel="stylesheet" type="text/css">
         <link href="m-home.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css">
         <link href="home.css" media="screen and (min-width: 900px)" rel="stylesheet" type="text/css">
+        <script src="home.js"></script>
     </head>
   
     <body>
-        <div class="navbar" id="nav-on">
+        <img id="m-icon" src="pics/icon.png" href="index.html" onclick="nav_visible()">
+
+        <div class="navbar" id="nav-visible"  style="display: flex;">
             <div class="items">
                 <img id="home" src="pics/home.png" href="#">
                 <a id="active" href="#">Home</a>
@@ -23,22 +26,27 @@
             </div>
         </div>
 
-        <div class="header">
-            <img id="icon" src="pics/icon.png" href="index.html">
-            <h1 style="padding-left: 5%;">Women & <br> Children First</h1>
-            <input id="search" type="text" placeholder="Search for categories / books">
-            <img src="pics/search.png" style="width:5%">
-        </div>
-
         <div class="main">
 
-            <p>111111hasjkbfajskbfaskjfbasjkfbasjkbfjsakbfjaks</p>
-            <p>22222hiadjkbasjkdhasjkbfajskbfaskjfbasjkfbasjkbfjsakbfjaks</p>
-            <p>333hiadjkbasjkdhasjkbfajskbfaskjfbasjkfbasjkbfjsakbfjaks</p>
-            <p>444hiadjkbasjkdhasjkbfajskbfaskjfbasjkfbasjkbfjsakbfjaks</p>
-            <p>555hiadjkbasjkdhasjkbfajskbfaskjfbasjkfbasjkbfjsakbfjaks</p>
-            <p>666hiadjkbasjkdhasjkbfajskbfaskjfbasjkfbasjkbfjsakbfjaks</p>
-            <p>777hiadjkbasjkdhasjkbfajskbfaskjfbasjkfbasjkbfjsakbfjaks</p>
+        <div class="header">
+            <img id="icon" src="pics/icon.png" href="index.html">
+            <h1>Women & <br> Children First</h1>
+            <input id="search" type="text" placeholder="Search for categories / books">
+            <img id="search-icon" src="pics/search.png">
+        </div>
+
+        <h2>Top Sellers</h2>
+            <hr>
+
+            <button>&lt;</button>
+            <img src="1.png">
+            <img src="1.png">
+            <img src="1.png">
+            <button>&gt;</button>
+
+
+        <h2>Browse By Categories</h2>
+            <hr>
 
         </div>
     </body>
