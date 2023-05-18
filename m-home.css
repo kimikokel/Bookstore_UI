@@ -56,10 +56,6 @@
     border: none;
 }
 
-.header input::placeholder {
-    font-size: 1vw;
-}
-
 .header #icon {
     width: 30%;
     border-style: solid;
@@ -104,6 +100,10 @@
 @media only screen and (max-width: 350px){
     #m-icon {
         margin-left: 0px;
+    }
+    .header input::placeholder {
+        /* font-size: 3dvw; */
+        visibility: hidden;
     }
 }
 

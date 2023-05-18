@@ -6,7 +6,7 @@
         <title>Women & Children First</title>
         <link href="main.css" rel="stylesheet" type="text/css">
         <link href="m-home.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css">
-        <link href="home.css" media="screen and (min-width: 900px)" rel="stylesheet" type="text/css">
+        <link href="home.css" media="screen and (min-width: 901px)" rel="stylesheet" type="text/css">
         <script src="home.js"></script>
     </head>
   
@@ -37,20 +37,44 @@
 
         <h2>Top Sellers</h2>
             <hr>
-            <div class="gridbox">
-                <div class="grid-item">
-                    <div class="grid-item1"></div><button>&lt;</button>
-                    <div class="grid-item2">
+            <table class="box">
+                <tr>
+                    <td><button id="back-button" class="nav-button">&lt;</button></td>
+                    <td class="product-box">
                         <img class="book" src="pics/books/9780063049901.jpeg">
                         <img class="book" src="pics/books/9780802128997.jpeg">
                         <img class="book" src="pics/books/9781419754319.jpeg">
-                    </div>
-                </div>
-                <div class="grid-item3"></div><button>&gt;</button>
-            </div>
+                        <img class="book" src="pics/books/9780593132593.jpeg">
+                        <img class="book" src="pics/books/9781501173219.jpeg">
+                        <img class="book" src="pics/books/9780525564232.jpeg">
+                    </td>
+                    <td><button id="next-button" class="nav-button">&gt;</button></td>
+                </tr>      
+            </table>
 
         <h2>Browse By Categories</h2>
             <hr>
+        
+        <table class="box">
+            <!-- <div class="product-box"> -->
+                <tr>
+                    <td class="product-box">
+                        <img class="book" src="pics/books/9780063049901.jpeg">
+                        <img class="book" src="pics/books/9780802128997.jpeg">
+                        <img class="book" src="pics/books/9781419754319.jpeg">
+                        <img class="book" src="pics/books/9780593132593.jpeg">
+                    </td>
+                </tr> 
+                <tr>
+                    <td class="product-box">
+                        <img class="book" src="pics/books/9780063049901.jpeg">
+                        <img class="book" src="pics/books/9780802128997.jpeg">
+                        <img class="book" src="pics/books/9781419754319.jpeg">
+                        <img class="book" src="pics/books/9780593132593.jpeg">
+                    </td>
+                </tr> 
+            <!-- </div> -->
+        </table>
 
         </div>
     </body>
