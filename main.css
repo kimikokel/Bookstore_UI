@@ -12,7 +12,6 @@ body{
     }  
 }
 
-
 h1 {
     font-size: 1.5vw;
     text-align: center;
@@ -29,7 +28,7 @@ h3 {
 }
 
 p {
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-align: center;
 }
 
@@ -38,7 +37,7 @@ hr {
     background-color: #424B54;
     width: 90%;
     height: 5px;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 
 .book {
@@ -52,33 +51,72 @@ input::placeholder {
     color: #424B54;
 }
 
-.box {
+.navbar{
+    position: fixed;
+    background-color: #BDAE86;
+    border-bottom: 5px white solid;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+.navbar .items{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    justify-content:center; 
+    color: #424B54;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+.navbar .items img {
+  width:2%;
 }
 
-.product-box {
-    border: #80714A solid 5px;
-    border-radius: 2vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: fit-content;
+.navbar .items a{
+  padding-left: 1%;
+  padding-right: 2%;
 }
 
-.box img {
-    justify-content: space-around;
+.header {
+  background-color: #D8C5B1;
+  border-bottom: 5px white solid;
+  margin-top: 6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-button {
-    padding: 0;
-    border: none;
-    background: none;
-    color: #80714A;
-    font-size: 4vw;
+.header #search {
+  width: 35%;
+  margin-left: 5%;
+  border-radius: 500px;
+  padding-left: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border: none;
+}
+
+.header h1 {
+  padding-left: 5%;
+}
+
+.header #search-icon {
+  width:5%;
+}
+
+.header #icon {
+  width: 10%;
+  border-style: solid;
+  border-color: white;
+  border-radius: 100000px;
+  border-width: 5px;
+}
+
+#m-icon {
+  display: none;
 }
 
 .category {
@@ -121,7 +159,7 @@ input::placeholder {
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
     background-color: #D8C5B1;
-    box-shadow: 0 55vh 0 50vh #D8C5B1;
+    box-shadow: 0 70vh 0 50vh #D8C5B1;
 }
 
 .footer-content {
@@ -143,5 +181,31 @@ input::placeholder {
 @media screen and (max-width: 900px) {
     .footer {
         margin: 5% -8px -8px 14%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .footer-content p {
+        font-size: 2vw;
+    }
+
+    .footer-content h3 {
+        font-size: 2.5vw;
+    }
+
+    .footer hr {
+        border-width:0;
+        background-color: #424B54;
+        width: 60%;
+        height: 2px;
+        margin-top: 0;
+        margin-bottom: 3%;
     }
 }
