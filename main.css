@@ -173,6 +173,14 @@ input::placeholder {
     margin-right: 5%;
 }
 
+.footer-content p {
+    font-size: 1vw;
+}
+
+.footer-content h3 {
+    font-size: 1.5vw;
+}
+
 .footer hr {
     border-width:0;
     background-color: #424B54;
@@ -205,7 +213,7 @@ input::placeholder {
     }
 
     .footer-content p {
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .footer-content h3 {
