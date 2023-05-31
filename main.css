@@ -78,6 +78,14 @@ input::placeholder {
   padding-right: 2%;
 }
 
+.nav-button {
+    padding: 0;
+    border: none;
+    background: none;
+    color: #80714A;
+    font-size: 4vw;
+  }
+
 .header {
   background-color: #D8C5B1;
   border-bottom: 5px white solid;
@@ -113,10 +121,6 @@ input::placeholder {
   border-color: white;
   border-radius: 100000px;
   border-width: 5px;
-}
-
-#m-icon {
-  display: none;
 }
 
 .category {
@@ -178,7 +182,15 @@ input::placeholder {
     margin-bottom: 10%;
 }
 
+#m-icon {
+    display: none;
+  }
+
 @media screen and (max-width: 900px) {
+    #m-icon {
+        display: flex;
+      }
+
     .footer {
         margin: 5% -8px -8px 14%;
         display: flex;

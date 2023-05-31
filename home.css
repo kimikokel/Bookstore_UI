@@ -18,11 +18,3 @@
 .box img {
   justify-content: space-around;
 }
-
-.nav-button {
-  padding: 0;
-  border: none;
-  background: none;
-  color: #80714A;
-  font-size: 4vw;
-}
