@@ -71,11 +71,14 @@ input::placeholder {
 
 .navbar .items img {
   width:2%;
+  padding-bottom: 1%;
 }
 
 .navbar .items a{
   padding-left: 1%;
   padding-right: 2%;
+  color: #424B54;
+  padding-top: .5%;
 }
 
 .nav-button {
