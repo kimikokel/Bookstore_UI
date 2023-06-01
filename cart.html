@@ -6,7 +6,11 @@
         <title>Women & Children First</title>
         <link href="main.css" rel="stylesheet" type="text/css">
         <link href="m-main.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css">
+
         <link href="cart.css" media="screen and (min-width: 901px)" rel="stylesheet" type="text/css">
+        <link href="m-cart.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css">
+
+
         <script src="main.js"></script>
     </head>
   
@@ -18,7 +22,7 @@
                 <img id="home" src="pics/home.png" onclick="window.location.href = 'index.html'">
                 <a href="index.html">Home</a>
 
-                <img id="browse" src="pics/search.png" onclick="window.location.href = 'browse.html'">
+                <img id="browse" src="pics/browse.png" onclick="window.location.href = 'browse.html'">
                 <a href="browse.html">Browse</a>  
 
                 <img id="cart" src="pics/shopping-cart.png" onclick="window.location.href = 'cart.html'">
@@ -33,7 +37,7 @@
 
         <div class="header">
             <img id="icon" src="pics/icon.png" href="index.html">
-            <h1>Women & <br> Children First</h1>
+            <h1 id="title">Women & <br> Children First</h1>
             <input id="search" type="text" placeholder="Search for categories / books">
             <img id="search-icon" src="pics/search.png">
         </div>
@@ -43,17 +47,13 @@
 
         <div class="container">
             <div class="item">
-                <div class="box">
-                    <img src="pics/books/9780063049901.jpeg"> 
-                    <div class="titles">
-                        <h3>Afterparties</h3>
-                        <p>Anthony Veana So</p>
-                    </div>
+                <img src="pics/books/9780063049901.jpeg"> 
+                <div class="titles">
+                    <h3>Afterparties</h3>
+                    <p>Anthony Veana So</p>
                 </div>
-                <div class="purchase">
-                        <input class="quantity-container" type="number" value="1" readonly>
-                    <p>$27.99</p>   
-                </div>
+                <input class="quantity-container" type="number" value="1" readonly>
+                <p>$27.99</p>   
             </div>
             <hr>
             <p class="total">Total: <span id="total">$27.99</span></p>

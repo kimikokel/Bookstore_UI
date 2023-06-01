@@ -32,8 +32,8 @@ h3 {
     display:flex;
     justify-content: flex-start;
     align-items:center;
-    width: 30%;
-    margin: 6% 5% 5% 5%;
+    width: 15vw;
+    margin: 10%;
     border: solid white 2px;
     border-radius: 20%;
 }
@@ -62,12 +62,14 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 30%;
 }
 
 .container hr {
     background-color: #80714A;
     width: 100%;
     height: 5px;
+    margin: 0;
 }
 
 .total{
@@ -114,9 +116,7 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     appearance: none;
     margin: 0;
-}
- */
-
+} */
 
 .container {
     border: 5px #80714A solid;
