@@ -40,6 +40,10 @@ hr {
     margin-bottom: 4%;
 }
 
+img {
+    cursor: pointer;
+}
+
 .book {
     width: 10%;
     border: white 0.5vw solid;
@@ -49,10 +53,12 @@ hr {
 input::placeholder {
     font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
     color: #424B54;
+    font-size: 1vw;
 }
 
 .navbar{
     position: fixed;
+    z-index: 1000;
     background-color: #BDAE86;
     border-bottom: 5px white solid;
     top: 0;
@@ -70,15 +76,18 @@ input::placeholder {
   }
 
 .navbar .items img {
-  width:2%;
-  padding-bottom: 1%;
+    width:2%;
+    padding-bottom: 1%;
 }
 
 .navbar .items a{
-  padding-left: 1%;
-  padding-right: 2%;
-  color: #424B54;
-  padding-top: .5%;
+    padding-left: 1%;
+    padding-right: 2%;
+    color: #424B54;
+    padding-top: .5%;
+    font-size: 1.5vw;
+    text-decoration: none;
+    vertical-align: top;
 }
 
 .nav-button {
@@ -123,7 +132,7 @@ input::placeholder {
   border-style: solid;
   border-color: white;
   border-radius: 100000px;
-  border-width: 5px;
+  border-width: .5vw;
 }
 
 .header #icon {
