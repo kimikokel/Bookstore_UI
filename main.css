@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #EFE2BD;
     font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
     color: #424B54;
@@ -9,7 +9,7 @@ body{
 @media screen and (min-width: 901px) {
     body {
         margin: 0;
-    }  
+    }
 }
 
 h1 {
@@ -22,9 +22,21 @@ h2 {
     text-align: center;
 }
 
+h2:hover {
+    color: #80714A;
+    transform: translateY(20%);
+    transition: .2s ease-in-out;
+}
+
 h3 {
     font-size: 2vw;
     text-align: center;
+}
+
+h3:hover {
+    color: #80714A;
+    transform: translateY(10%);
+    transition: .2s ease-in-out;
 }
 
 p {
@@ -33,7 +45,7 @@ p {
 }
 
 hr {
-    border-width:0;
+    border-width: 0;
     background-color: #424B54;
     width: 90%;
     height: 5px;
@@ -55,13 +67,31 @@ img {
     border-radius: 15%;
 }
 
+.main img:hover {
+    filter: brightness(120%);
+    transform: translateY(-20%);
+    box-shadow: 0 1vw 1vw #424B54;
+    transition: .2s ease-in-out;
+}
+
+.btn img:hover {
+    transform: none;
+    box-shadow: none;
+    filter: none;
+}
+
+.btn:hover {
+    box-shadow: 0 .5vw .5vw #BDAE86;
+    transition: .2s ease-in-out;
+}
+
 input::placeholder {
     font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
     color: #424B54;
     font-size: 1vw;
 }
 
-.navbar{
+.navbar {
     position: fixed;
     z-index: 1000;
     background-color: #BDAE86;
@@ -69,23 +99,24 @@ input::placeholder {
     top: 0;
     left: 0;
     right: 0;
-  }
-.navbar .items{
+}
+
+.navbar .items {
     display: flex;
-    justify-content:center; 
+    justify-content: center;
     color: #424B54;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
-  }
+}
 
 .navbar .items img {
-    width:2%;
+    width: 2%;
     padding-bottom: 1%;
 }
 
-.navbar .items a{
+.navbar .items a {
     padding-left: 1%;
     padding-right: 2%;
     color: #424B54;
@@ -104,46 +135,51 @@ input::placeholder {
 }
 
 .header {
-  background-color: #D8C5B1;
-  border-bottom: 5px white solid;
-  margin-top: 7%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: #D8C5B1;
+    border-bottom: 5px white solid;
+    margin-top: 7%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header #search {
-  width: 35%;
-  margin-left: 5%;
-  border-radius: 500px;
-  padding-left: 3%;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
-  border: none;
+    width: 35%;
+    margin-left: 5%;
+    border-radius: 500px;
+    padding-left: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border: none;
 }
 
 .header h1 {
-  padding-left: 5%;
+    padding-left: 5%;
 }
 
 .header #search-icon {
-  width:5%;
+    width: 5%;
+}
+
+.header #search-icon:hover {
+    box-shadow: none;
+    filter: brightness(0%);
 }
 
 .header #icon {
-  width: 10%;
-  border-style: solid;
-  border-color: white;
-  border-radius: 100000px;
-  border-width: .5vw;
+    width: 10%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 100000px;
+    border-width: .5vw;
 }
 
 .header #icon {
     display: flex;
 }
-  
+
 .header #title {
     display: flex;
 }
@@ -188,7 +224,8 @@ input::placeholder {
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
     background-color: #D8C5B1;
-    box-shadow: 0 70vh 0 50vh #D8C5B1;
+    /* box-shadow: 0 70vh 0 50vh #D8C5B1; */
+    transition: ease-in-out .5s;
 }
 
 .footer-content {
@@ -207,7 +244,7 @@ input::placeholder {
 }
 
 .footer hr {
-    border-width:0;
+    border-width: 0;
     background-color: #424B54;
     width: 100%;
     height: 2px;
@@ -217,40 +254,4 @@ input::placeholder {
 
 #m-icon {
     display: none;
-  }
-
-@media screen and (max-width: 900px) {
-    #m-icon {
-        display: flex;
-      }
-
-    .footer {
-        margin: 5% -8px -8px 14%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .footer-content p {
-        font-size: 1.5vw;
-    }
-
-    .footer-content h3 {
-        font-size: 2.5vw;
-    }
-
-    .footer hr {
-        border-width:0;
-        background-color: #424B54;
-        width: 60%;
-        height: 2px;
-        margin-top: 0;
-        margin-bottom: 3%;
-    }
 }

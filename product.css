@@ -129,10 +129,6 @@ a {
     text-align: center;
 }
 
-.button:hover {
-    background: #06D85F;
-}
-
 .overlay {
     position: fixed;
     top: 0;
@@ -157,7 +153,6 @@ a {
     border-radius: 5px;
     width: 80%;
     position: absolute;
-    /* transition: all 5s ease-in-out; */
     z-index: 100000;
     position: absolute;
     top: 50%;
@@ -166,6 +161,7 @@ a {
 }
 
 .popup .close {
+    transition: 5s ease-in-out;
     position: absolute;
     top: 20px;
     right: 30px;
@@ -197,7 +193,7 @@ a {
     }
 }
 
-.popup .container .item {
+.popup .pop-container .item {
     background-color: #EFE2BD;
 }
 

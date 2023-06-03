@@ -1,0 +1,135 @@
+.summary {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* max-height: 200px; */
+    /* overflow-y: scroll; */
+}
+
+.container h3 {
+    font-size: 3vw;
+}
+
+.container p {
+    font-size: 3vw;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: .5vw #80714A solid;
+    border-radius: 2vw;
+    /* margin: 0 10% 5% 10%; */
+}
+
+#collapse {
+    width: 100%;
+}
+
+.collapse-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.collapse-box h2 {
+    margin: 0 0;
+}
+
+.collapse {
+    float: left;
+    transition: all 200ms;
+    font-size: 5vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item img {
+    width: 8vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid white .2vw;
+    border-radius: 20%;
+}
+
+.item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titles p {
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+}
+
+.container p {
+    font-size: 2vw;
+}
+
+.purchase button{
+    border: none;
+    margin: 0;
+    max-width: 15%;
+}
+
+.container hr {
+    background-color: #80714A;
+    width: 100%;
+    height: .5vw;
+    margin: 5% 0;
+}
+
+.total {
+    font-size: 3vw;
+}
+
+.quantity-container {
+    border: solid #80714A .5vw;
+    width: 15vw;
+    height: 5vw;
+    display: flex;
+}
+
+.quantity-container .number {
+    border-right: solid #80714A .5vw;
+    border-left: solid #80714A .5vw;
+    border-radius: 0;
+    font-size: 3vw;
+    width: 2vw;
+    height: 5vw;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.quantity-container .quantity {
+    width: 3vw;
+    height: 3vw;
+    font-size: 3vw;
+    border-radius: 0;
+    margin-right: 11%;
+    margin-left: 11%;
+    margin-bottom: 3%;
+    padding: 1%;
+}
+
+.quantity-container .quantity:hover {
+    height: 5vw;
+    border: none;
+    background: none;
+}

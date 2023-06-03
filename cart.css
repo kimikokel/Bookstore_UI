@@ -1,127 +1,12 @@
-/* .container {
-    border: 5px #80714A solid;
-    border-radius: 2vw;
-    margin: 0 10% 0 10%;
-}
-
-.item {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-h3 {
-    font-size: 1.5vw;
-}
-
-.titles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 20%;
-}
-
-.box p {
-    font-size: 1vw;
-    font-style: italic;
-    text-align: center;
-}
-
-.item img {
-    display:flex;
-    justify-content: flex-start;
-    align-items:center;
-    width: 30%;
-    margin: 6% 5% 5% 5%;
-    border: solid white 2px;
-    border-radius: 20%;
-}
-
-.purchase {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 170px;
-}
-
-.purchase p{
-    margin-left: 100px;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-right: 20px;
-}
-
-.purchase button{
-    border: none;
-    margin: 0;
-    max-width: 15%;
-}
-
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.container hr {
-    background-color: #80714A;
-    width: 100%;
-    height: 5px;
-}
-
-.total{
-    font-size: 2vw;
-    font-weight: bold;
-    font-style: italic;
-    text-align: end;
-    margin-right: 5%;
-    margin-bottom: 3%;
-}
-
-.quantity-container {
-    border: solid #80714A 5px;
-    border-radius: 1vw;
-    width: 7vw;
-    height: 3vw;
-    transition: .5s;
-    font-size: 2vw;
-    text-align: center;
-    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-    color: #424B54;
-    padding-top:4%;
-    padding-left: 2%;
-    background-color: #EFE2BD;
-}
-
-.quantity-container:hover {
-    background-color: #BDAE86;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  transform: rotate(90deg);
-}
-
-input[type=number] { 
-    -moz-appearance: textfield;
-    appearance: textfield;
-    margin: 0;
-} 
-  
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
-}
- */
-
-
 .container {
-    border: 5px #80714A solid;
+    border: .5vw #80714A solid;
     border-radius: 2vw;
-    margin: 0 10% 0 10%;
+    margin: 0 10% 5% 10%;
+}
+
+.container:hover {
+    transform: scale(110%);
+    background-color: #e1d3af;
 }
 
 .item {
@@ -134,8 +19,18 @@ input[type=number]::-webkit-outer-spin-button {
     width: 15vw;
     margin-top: 5%;
     margin-bottom: 5%;
-    border: solid white 2px;
+    border: solid white .5vw;
     border-radius: 20%;
+}
+
+.item2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.item2 .quantity-container {
+    margin-right: 5vw;
 }
 
 .titles p {
@@ -171,38 +66,55 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .quantity-container {
-    border: solid #80714A 5px;
+    border: solid #80714A .2vw;
     border-radius: 1vw;
     width: 7vw;
     height: 3vw;
     transition: .5s;
-    font-size: 2vw;
-    text-align: center;
+    background-color: #EFE2BD;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-container .number {
+    border-right: solid #80714A .2vw;
+    border-left: solid #80714A .2vw;
+    border-top: none;
+    border-bottom: none;
+    background: none;
     font-family: "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
     color: #424B54;
-    /* padding-top:4%;
-    padding-left: 2%; */
-    background-color: #EFE2BD;
+    font-size: 1.5vw;
+    text-align: center;
+    width: 1vw;
+    height: 3vw;
+    padding: 0 5%;
 }
 
-.quantity-container:hover {
+.quantity-container .quantity {
+    border: none;
+    background: none;
+    width: 3vw;
+    font-family: "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    color: #424B54;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.quantity-container #add, #add2 {
+    border-top-right-radius: .8vw;
+    border-bottom-right-radius: .8vw;
+}
+
+.quantity-container #minus, #minus2 {
+    border-top-left-radius: .8vw;
+    border-bottom-left-radius: .8vw;
+}
+
+
+.quantity-container .quantity:hover {
+    height: 3vw;
     background-color: #BDAE86;
-}
-
-/* input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  transform: rotate(90deg);
-} */
-
-input[type=number] { 
-    -moz-appearance: textfield;
-    appearance: textfield;
-    margin: 0;
-} 
-  
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
 }

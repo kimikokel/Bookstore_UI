@@ -81,3 +81,7 @@ h3 {
     height: 2%;
     margin: 0;  
 }
+
+.category h3 {
+    font-size: 2vw;
+}
