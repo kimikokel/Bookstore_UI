@@ -1,0 +1,27 @@
+.item {
+    width: 70%;
+}
+
+.btn img {
+    position: absolute;
+    width: 4%;
+    margin-right: 20%;
+}
+
+@media screen and (max-width: 390px) {
+    .btn img {
+        width: 4%;
+        margin-right: 25%;
+    }
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
