@@ -44,6 +44,11 @@ img {
     cursor: pointer;
 }
 
+.active {
+    /* text-shadow: white 1px 0 5px; */
+    font-weight: bold;
+}
+
 .book {
     width: 10%;
     border: white 0.5vw solid;

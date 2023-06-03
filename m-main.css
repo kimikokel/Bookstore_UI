@@ -114,7 +114,6 @@ h2 {
         margin-left: 0px;
     }
     .header input::placeholder {
-        /* font-size: 3dvw; */
         visibility: hidden;
     }
 }
