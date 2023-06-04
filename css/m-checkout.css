@@ -1,12 +1,50 @@
 .summary {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100%;
-    /* max-height: 200px; */
-    /* overflow-y: scroll; */
 }
+.btn input {
+    font-size: 3vw;
+}
+
+.container {
+    background-color: #D8C5B1;
+}
+
+.checkout h3 {
+    font-size: 2.5vw;
+}
+
+.checkout p {
+    font-size: 2vw;
+}
+
+.checkout {
+    width: 100%;
+}
+
+.textbox {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20%;
+    position:absolute;
+    height: 5vh;
+}
+
+.login input {
+    border-radius: 2vw;
+    padding: 0;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 100%;
+}
+
 
 .container h3 {
     font-size: 3vw;
@@ -24,7 +62,7 @@
     width: 100%;
     border: .5vw #80714A solid;
     border-radius: 2vw;
-    /* margin: 0 10% 5% 10%; */
+    margin: 2% 0% 5% 0%;
 }
 
 #collapse {
@@ -32,22 +70,13 @@
 }
 
 .collapse-box {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    margin-top: 5%;
 }
 
-.collapse-box h2 {
-    margin: 0 0;
-}
-
-.collapse {
-    float: left;
-    transition: all 200ms;
+#arrow{
     font-size: 5vw;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
+    margin-bottom: 0;
+    cursor: pointer;
 }
 
 .item {
@@ -55,12 +84,13 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    line-height: 5px;
 }
 
 .item img {
-    width: 8vw;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    width: 10vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
     border: solid white .2vw;
     border-radius: 20%;
 }
@@ -119,17 +149,20 @@
 
 .quantity-container .quantity {
     width: 3vw;
-    height: 3vw;
     font-size: 3vw;
     border-radius: 0;
     margin-right: 11%;
     margin-left: 11%;
     margin-bottom: 3%;
     padding: 1%;
+    height: 5vw;
 }
 
 .quantity-container .quantity:hover {
-    height: 5vw;
     border: none;
     background: none;
+}
+
+.quantity-container #add, #add2 {
+    margin-top: 4%;
 }

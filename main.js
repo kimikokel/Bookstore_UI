@@ -11,7 +11,7 @@ function nav_visible() {
         footer.style.marginLeft = "0";
     } else {
         nav.style.display = "flex";
-        main.style.marginLeft = "16%";
+        main.style.marginLeft = "17%";
         header.style.marginLeft = "0";
         footer.style.marginLeft = "17%";
     }
@@ -19,49 +19,42 @@ function nav_visible() {
 
 function quantity(id) {
     const operation = document.getElementById(id).value;
-    let qty, price, t_id, p_id, total;
-    // let amount = document.getElementById("amount");
-    // let sum = parseFloat(amount.innerHTML);
+    let qty_, price_, t_id_, p_id_, total_;
 
     if (id == "add" || id == "minus") {
-        qty = document.getElementById("qty");
+        qty_ = document.getElementById("qty");
 
-        p_id = document.getElementById("price");
-        price = parseFloat(p_id.innerHTML);
+        p_id_ = document.getElementById("price");
+        price_ = parseFloat(p_id_.innerHTML);
 
-        t_id = document.getElementById("total");
-        total = parseFloat(t_id.innerHTML);
+        t_id_ = document.getElementById("total");
+        total_ = parseFloat(t_id_.innerHTML);
     } else {
-        qty = document.getElementById("qty2");
+        qty_ = document.getElementById("qty2");
 
-        p_id = document.getElementById("price2");
-        price = parseFloat(p_id.innerHTML);
+        p_id_ = document.getElementById("price2");
+        price_ = parseFloat(p_id_.innerHTML);
 
-        t_id = document.getElementById("total2");
-        total = parseFloat(t_id.innerHTML);
+        t_id_ = document.getElementById("total2");
+        total_ = parseFloat(t_id_.innerHTML);
     }
 
     if (operation == "+") {
-        if (qty.value != 9) {
-            qty.value = parseInt(qty.value) + 1;
-            total = total + price;
-            t_id.innerHTML = total.toFixed(2);
+        if (qty_.value != 9) {
+            total_ = total_ + price_;
+            t_id_.innerHTML = total_.toFixed(2);
         }
     }
     else if (operation == "-") {
-        if (qty.value != 1) {
-            qty.value = parseInt(qty.value) - 1;
-            total = total - price;
-            t_id.innerHTML = total.toFixed(2);
-            // sum = sum - total;
-            // amount.innerHTML = sum.toFixed(2);
+        if (qty_.value != 1) {
+            total_ = total_ - price_;
+            t_id_.innerHTML = total_.toFixed(2);
         }
     }
-    // sum = total;
-    // amount.innerHTML = sum.toFixed(2);
+    checkout_quantity(id, "amount");
 }
 
-function checkout_quantity(id) {
+function checkout_quantity(id, ttl) {
     const operation = document.getElementById(id).value;
 
     let qty = document.getElementById("qty");
@@ -72,7 +65,7 @@ function checkout_quantity(id) {
     let p_id2 = document.getElementById("price2");
     let price2 = parseFloat(p_id2.innerHTML);
 
-    let t_id = document.getElementById("total");
+    let t_id = document.getElementById(ttl);
     let total = parseFloat(t_id.innerHTML);
 
     switch (operation) {

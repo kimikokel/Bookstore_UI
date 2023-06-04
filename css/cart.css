@@ -56,6 +56,10 @@
     margin: 0;
 }
 
+.btn input {
+    padding-top: 1vw;
+}
+
 .total{
     font-size: 2vw;
     font-weight: bold;

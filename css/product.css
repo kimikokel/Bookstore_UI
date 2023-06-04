@@ -90,12 +90,6 @@
     padding-left: 15%;
 }
 
-.btn img {
-    position: absolute;
-    width: 3%;
-    margin-right: 20%;
-}
-
 .btn p {
     font-size: 2vw;
     padding-left: 5%;
@@ -103,6 +97,11 @@
 
 .btn:hover {
     background-color: #6a5d3c;
+}
+
+.btn img {
+    position: absolute;
+    width: 3%;
 }
 
 .para {
@@ -163,8 +162,8 @@ a {
 .popup .close {
     transition: 5s ease-in-out;
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 10px;
+    right: 20px;
     transition: all 200ms;
     font-size: 30px;
     font-weight: bold;
@@ -194,13 +193,14 @@ a {
 
     .popup .close {
         top: 5px;
-        right: 10px;
+        right: 5px;
         font-size: 20px;
     }
 }
 
 .popup .pop-container .item {
     background-color: #EFE2BD;
+    margin-bottom: 2%;
 }
 
 .popup .word {

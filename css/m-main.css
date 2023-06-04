@@ -1,7 +1,13 @@
 .main {
-    margin-left: 16%;
+    margin-left: 17%;
     overflow-wrap: break-word;
     transition: ease-in-out .5s;
+}
+
+input::placeholder {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    color: #424B54;
+    font-size: 2vw;
 }
 
 hr {
@@ -116,10 +122,6 @@ h2 {
 @media only screen and (max-width: 350px) {
     #m-icon {
         margin-left: 0px;
-    }
-
-    .header input::placeholder {
-        visibility: hidden;
     }
 }
 

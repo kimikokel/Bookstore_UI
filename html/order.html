@@ -8,8 +8,8 @@
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <link href="../css/m-main.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css">
 
-    <link href="../css/account.css" media="screen and (min-width: 901px)" rel="stylesheet" type="text/css">
-    <link href="../css/m-account.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css">
+    <link href="../css/checkout.css" rel="stylesheet" type="text/css">
+    <link href="../css/m-checkout.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css">
 
     <script src="../main.js"></script>
 </head>
@@ -26,10 +26,10 @@
             <a href="browse.html">Browse</a>
 
             <img id="cart" src="../pics/shopping-cart.png" onclick="window.location.href = 'cart.html'">
-            <a href="cart.html">Cart</a>
+            <a class="active" href="cart.html">Cart</a>
 
             <img id="account" src="../pics/user.png" onclick="window.location.href = 'account.html'">
-            <a class="active" href="account.html">Account</a>
+            <a href="account.html">Account</a>
         </div>
     </div>
 
@@ -42,38 +42,26 @@
             <img id="search-icon" src="../pics/search.png">
         </div>
 
-        <div class="account_login">
-            <h2>Account Login</h2>
-            <hr>
+        <h2>Order Success!</h2>
+        <hr>
 
-            <div class="container">
-                <h3>Login to Account</h3>
+        <div class="summary">
+            <div class="container" style="width:80%">
+                <br>
+                <img src="../pics/check-mark.png" style="width:10%;">
+                <p>We have sent you a confirmation email</p>
+                <p>Thank you for purchasing at Women & Children First!</p>
                 <hr>
-                <form>
-                    <div class="login">
-                        <div class="textbox">
-                            <p>Username:</p>
-                        <input type="text" required>
-                        </div> 
-                    </div>
-                    <div class="login">
-                        <div class="textbox">
-                            <p>Password:</p>
-                        <input type="password" required>
-                        </div>
-                    </div>
-                    <div class="btnbox">
-                        <div class="btn"><img src="../pics/login.png"><input type="submit" value="Login"></input></div>
-                    </div>
-                </form>
+                <h2>Donate to the CBWP!</h2>
+                <img src="../pics/cbwwp.png" style="width:50%; border-radius: 10000px;">
             </div>
         </div>
+    </div>
 
-        <p>Forgot Password?</p>
-
-        <p>Not a member? Sign up <i>here</i></p>
+    </div>
 
     </div> <!-- end of main -->
+
 
     <div class="footer" id="footer">
         <div class="footer-content">

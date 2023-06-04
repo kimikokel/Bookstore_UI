@@ -87,8 +87,6 @@
     font-size: 2vw;
 }
 
-
-
 .pop-container {
     display: flex;
     flex-direction: row;
@@ -98,7 +96,7 @@
 .pop-item {
     width: 60%;
     margin: auto;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -188,7 +186,7 @@
     flex-direction: column;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     .popup {
         max-height: 85%;
     }
@@ -213,57 +211,4 @@
     .popup .content .btn img{
         width: 2%;
     }
-}
-
-.btnbox {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 4vw;
-    background-color: #80714A;
-    box-shadow: inset 8px 8px 15px rgba(0, 0, 0, 0.1);
-    height: 3vw;
-    transition: .5s;
-    padding: 10px;
-}
-
-.btn input {
-    width: 100%;
-    background: none;
-    border: none;
-    font-size: 2vw;
-    color: white;
-    text-align: center;
-    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-    cursor: pointer;
-    padding-left: 15%;
-}
-
-.btn img {
-    position: absolute;
-    width: 3%;
-    margin-right: 10%;
-}
-
-.btn p {
-    font-size: 2vw;
-    padding-left: 5%;
-}
-
-.btn:hover {
-    background-color: #6a5d3c;
-}
-
-.btn img {
-    position: absolute;
-    width: 4%;
-    margin-right: 20%;
-    padding-bottom: .5%;
 }
