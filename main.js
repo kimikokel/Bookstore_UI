@@ -20,6 +20,8 @@ function nav_visible() {
 function quantity(id) {
     const operation = document.getElementById(id).value;
     let qty, price, t_id, p_id, total;
+    // let amount = document.getElementById("amount");
+    // let sum = parseFloat(amount.innerHTML);
 
     if (id == "add" || id == "minus") {
         qty = document.getElementById("qty");
@@ -51,8 +53,12 @@ function quantity(id) {
             qty.value = parseInt(qty.value) - 1;
             total = total - price;
             t_id.innerHTML = total.toFixed(2);
+            // sum = sum - total;
+            // amount.innerHTML = sum.toFixed(2);
         }
     }
+    // sum = total;
+    // amount.innerHTML = sum.toFixed(2);
 }
 
 function checkout_quantity(id) {

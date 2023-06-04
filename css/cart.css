@@ -1,7 +1,7 @@
 .container {
     border: .5vw #80714A solid;
     border-radius: 2vw;
-    margin: 0 10% 5% 10%;
+    margin: 0 20% 5% 20%;
 }
 
 .container:hover {
@@ -16,7 +16,7 @@
 }
 
 .item img {
-    width: 15vw;
+    width: 10vw;
     margin-top: 5%;
     margin-bottom: 5%;
     border: solid white .5vw;

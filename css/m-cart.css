@@ -9,9 +9,8 @@ p {
 .container {
     border: .5vw #80714A solid;
     border-radius: 2vw;
-    margin: 0 5% 5% 5%;
-    height: 25vh;
-    flex-direction: column-reverse;
+    margin: 0 10% 5% 10%;
+    /* height: 15vh; */
 }
 
 .container hr {
@@ -19,7 +18,7 @@ p {
 }
 
 .item img {
-    width: 20vw;
+    width: 12vw;
     margin-top: 5%;
     margin-bottom: 5%;
     border: solid white .5vw;
