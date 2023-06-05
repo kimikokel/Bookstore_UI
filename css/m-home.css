@@ -1,6 +1,12 @@
+/* main */
+
 .main {
   margin-left: 16%;
 }
+
+/* main */
+
+/* box */
 
 .box {
   display: flex;
@@ -23,9 +29,13 @@
 }
 
 .box img {
-  justify-content: space-around;  
+  justify-content: space-around;
   width: 20%;
 }
+
+/* box */
+
+/* header */
 
 .header #icon {
   margin-top: 10%;
@@ -43,6 +53,7 @@
   font-size: 4vw;
   margin-left: 2%;
 }
+
 .header {
   background: none;
   border-bottom: none;
@@ -64,8 +75,8 @@
 
 .header #search-icon {
   margin-top: 5%;
-  width:10%;
-  margin-bottom:4%;
+  width: 10%;
+  margin-bottom: 4%;
 }
 
 .header #icon {
@@ -75,3 +86,5 @@
 .header #title {
   display: flex;
 }
+
+/* header */

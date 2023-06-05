@@ -11,13 +11,13 @@
     <link href="../css/product.css" rel="stylesheet" type="text/css">
     <link href="../css/m-product.css" media="screen and (max-width: 900px)" rel="stylesheet" type="text/css">
 
-
     <script src="../main.js"></script>
 </head>
 
 <body>
     <img id="m-icon" src="../pics/icon.png" href="../index.html" onclick="nav_visible()">
 
+    <!-- navigation bar -->
     <div class="navbar" id="nav-visible" style="display: flex;">
         <div class="items">
             <img id="home" src="../pics/home.png" onclick="window.location.href = '../index.html'">
@@ -32,7 +32,7 @@
             <img id="account" src="../pics/user.png" onclick="window.location.href = 'account.html'">
             <a href="account.html">Account</a>
         </div>
-    </div>
+    </div> <!-- end of navigation bar -->
 
     <div class="main" id="main">
 
@@ -62,7 +62,8 @@
 
         <div class="btnbox">
             <a href="#popup1">
-                <div class="btn"><img src="../pics/white cart.png"><input type="button" value="Add to Cart"></input></div>
+                <div class="btn"><img src="../pics/white cart.png"><input type="button" value="Add to Cart"></input>
+                </div>
             </a>
         </div>
         <div class="btnbox">
@@ -130,8 +131,8 @@
                         </div>
                     </div>
                     <div class="btnbox">
-                        <div class="btn" id="cart"><img src="../pics/white cart.png"><input type="button" value="View Cart"
-                                onclick="window.location.href = 'cart.html'"></input></div>
+                        <div class="btn" id="cart"><img src="../pics/white cart.png"><input type="button"
+                                value="View Cart" onclick="window.location.href = 'cart.html'"></input></div>
                     </div>
                     <div class="btnbox">
                         <div class="btn" id="account"><img src="../pics/card.png"><input type="button" value="Checkout"
@@ -143,7 +144,7 @@
 
     </div> <!-- end of main -->
 
-    <div class="footer" id="footer"> 
+    <div class="footer" id="footer">
         <div class="footer-content">
             <h3>Contact Us</h3>
             <hr>

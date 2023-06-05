@@ -1,3 +1,5 @@
+/* container */
+
 .container {
     display: flex;
     flex-direction: row;
@@ -21,6 +23,16 @@
 .item img {
     cursor: initial;
 }
+
+.item hr {
+    width: auto;
+    height: 2px;
+    margin: 0;
+}
+
+/* container */
+
+/* content */
 
 .book {
     width: 18vw;
@@ -46,18 +58,15 @@
     text-align: left;
 }
 
-
 .purchase button {
     border: none;
     margin: 0;
     max-width: 15%;
 }
 
-.item hr {
-    width: auto;
-    height: 2px;
-    margin: 0;
-}
+/* content */
+
+/* popups */
 
 .btnbox {
     margin: auto;
@@ -236,3 +245,5 @@ a {
         width: 2%;
     }
 }
+
+/* popups */

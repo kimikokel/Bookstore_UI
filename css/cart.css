@@ -1,3 +1,5 @@
+/* container */
+
 .container {
     border: .5vw #80714A solid;
     border-radius: 2vw;
@@ -43,7 +45,7 @@
     font-weight: bold
 }
 
-.purchase button{
+.purchase button {
     border: none;
     margin: 0;
     max-width: 15%;
@@ -60,7 +62,11 @@
     padding-top: 1vw;
 }
 
-.total{
+/* container */
+
+/* quantity-container */
+
+.total {
     font-size: 2vw;
     font-weight: bold;
     font-style: italic;
@@ -107,12 +113,14 @@
     text-align: center;
 }
 
-.quantity-container #add, #add2 {
+.quantity-container #add,
+#add2 {
     border-top-right-radius: .8vw;
     border-bottom-right-radius: .8vw;
 }
 
-.quantity-container #minus, #minus2 {
+.quantity-container #minus,
+#minus2 {
     border-top-left-radius: .8vw;
     border-bottom-left-radius: .8vw;
 }
@@ -122,3 +130,5 @@
     height: 3vw;
     background-color: #BDAE86;
 }
+
+/* quantity-container */

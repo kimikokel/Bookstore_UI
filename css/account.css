@@ -1,3 +1,5 @@
+/* container */
+
 .container {
     border: 5px #80714A solid;
     border-radius: 2vw;
@@ -9,11 +11,13 @@
     margin-top: 4%;
 }
 
-
 .container p {
     font-size: 2vw;
 }
 
+/* container */
+
+/* login */
 
 .login {
     display: flex;
@@ -30,7 +34,6 @@
     justify-content: flex-end;
     align-items: center;
     margin-left: 8%;
-    /* position:absolute; */
 }
 
 .login input {
@@ -78,3 +81,5 @@
 .login input {
     border: solid #424B54 .2vw;
 }
+
+/* login */

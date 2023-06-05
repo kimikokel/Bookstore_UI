@@ -1,3 +1,5 @@
+/* container */
+
 .container {
     display: flex;
     margin: 3% 3% 3% 4%;
@@ -17,14 +19,14 @@
     margin: 5px;
 }
 
-@media screen and (max-width: 464px){
+@media screen and (max-width: 464px) {
     .item {
         width: 43%;
         margin-left: 3%;
     }
 }
 
-@media screen and (max-width: 240px){
+@media screen and (max-width: 240px) {
     .item {
         width: 40%;
         margin-left: 5%;
@@ -40,9 +42,9 @@
 }
 
 .item img {
-    display:flex;
+    display: flex;
     justify-content: flex-start;
-    align-items:center;
+    align-items: center;
     max-width: 30%;
     margin: 5%;
     border: solid white 2px;
@@ -58,7 +60,7 @@
     border-bottom-right-radius: 2vw;
 }
 
-.purchase p{
+.purchase p {
     margin-right: 15%;
     margin-left: 0;
     margin-top: 7.5%;
@@ -66,7 +68,7 @@
     font-size: 2vw;
 }
 
-.purchase img{
+.purchase img {
     display: flex;
     align-items: center;
     margin-left: 0;
@@ -91,11 +93,17 @@
     background-color: #80714A;
     width: 100%;
     height: 2%;
-    margin: 0;  
+    margin: 0;
 }
+
+/* container */
+
+/* popups */
 
 .popup .close {
     top: 5px;
     right: 5px;
     font-size: 20px;
 }
+
+/* popups */

@@ -1,9 +1,13 @@
+//used to hide/show the navigation bar on mobile version
 function nav_visible() {
     let nav = document.getElementById("nav-visible");
     let main = document.getElementById("main");
     let header = document.getElementById("header");
     let footer = document.getElementById("footer");
 
+    //if the style is currently flex (showing),
+    //then close the nav bar and make the content full screen,
+    //if it is not showing, then show the bar and push the content to the right
     if (nav.style.display == "flex") {
         nav.style.display = "none";
         main.style.marginLeft = "0";
@@ -17,10 +21,13 @@ function nav_visible() {
     }
 }
 
+//used in the cart page,
+//calculating the price of each individual book by altering the quantity
 function quantity(id) {
     const operation = document.getElementById(id).value;
     let qty_, price_, t_id_, p_id_, total_;
 
+    //used to identify the first book and the second book id
     if (id == "add" || id == "minus") {
         qty_ = document.getElementById("qty");
 
@@ -39,6 +46,9 @@ function quantity(id) {
         total_ = parseFloat(t_id_.innerHTML);
     }
 
+    //if + was pressed, the quantity will +1 and sum the total,
+    //if - was pressed, the quantity will -1 and sum the total,
+    //quantity must be between 1-9 inclusive
     if (operation == "+") {
         if (qty_.value != 9) {
             total_ = total_ + price_;
@@ -51,9 +61,15 @@ function quantity(id) {
             t_id_.innerHTML = total_.toFixed(2);
         }
     }
+
+    //calling the checkout_quantity function,
+    //bringing in the id of the button pressed (add/minus)
+    //and the amount id for the sum of all books
     checkout_quantity(id, "amount");
 }
 
+//used in the checkout page,
+//used to sum the total amount of the books by quantity
 function checkout_quantity(id, ttl) {
     const operation = document.getElementById(id).value;
 
@@ -68,6 +84,8 @@ function checkout_quantity(id, ttl) {
     let t_id = document.getElementById(ttl);
     let total = parseFloat(t_id.innerHTML);
 
+    //switch between two operations ("+" / "-")
+    //decide which book to add/subtract using the different id ("add" / "add2")
     switch (operation) {
         case "+":
             if (id == "add") {
@@ -103,6 +121,9 @@ function checkout_quantity(id, ttl) {
     }
 }
 
+//used in the checkout page,
+//collapse the cart if the display is currently block (showing)
+//expand the cart if the display is none (not showing)
 function collapse() {
     let collapse = document.getElementById("collapse");
 

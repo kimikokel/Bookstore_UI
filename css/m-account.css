@@ -1,3 +1,5 @@
+/* container */
+
 .container {
     border: .5vw #80714A solid;
     border-radius: 2vw;
@@ -14,6 +16,10 @@
 .container p {
     font-size: 3vw;
 }
+
+/* container */
+
+/* login */
 
 .textbox {
     width: 90%;
@@ -38,3 +44,5 @@
 .btn img {
     margin-right: 10%;
 }
+
+/* login */
