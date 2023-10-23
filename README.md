@@ -1,2 +1,5 @@
-# kimikokel.github.io
-Unimelb INFO20005
+# Bookstore
+
+Front end design for an online bookstore
+
+Unimelb INFO20005 project
