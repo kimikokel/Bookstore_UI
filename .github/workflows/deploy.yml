@@ -30,7 +30,7 @@ jobs:
           # Remove any hidden .git folder if it was copied accidentally
           rm -rf deploy-repo/bookstore/.git
 
-      # Step 4: Commit and push the changes to the deployment repo
+      # Step 4: Commit and push the changes to the deployment repo 
       - name: Commit and Push to Deployment Repo
         run: |
           cd deploy-repo
