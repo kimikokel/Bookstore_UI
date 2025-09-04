@@ -26,7 +26,7 @@ jobs:
           # Delete the old /bookstore folder in the deployment repo
           rm -rf deploy-repo/bookstore
           # Copy all files from the current project (Bookstore_UI) to the new path
-          cp -r ./ deploy-repo/bookstore/
+          cp -r static/ deploy-repo/bookstore/
           # Remove any hidden .git folder if it was copied accidentally
           rm -rf deploy-repo/bookstore/.git
 
